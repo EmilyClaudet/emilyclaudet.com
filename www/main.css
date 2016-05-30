@@ -1,0 +1,118 @@
+* { margin: 0 auto;}
+
+
+body {
+    background:white; 
+    margin: 0 auto; 
+    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+    height:2000px;
+    font-size: 1.4em;
+    }
+
+#header {
+    position:fixed;
+    top:0px;
+    left:0px;
+    background: #383856; 
+    height:70px; 
+    width:100%;
+    }
+
+#nav {
+    word-spacing: 30px;
+    background-color: #383856;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    float: left;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline red;
+}
+    
+#page1 {
+    height:1000px;
+    width:100%;
+    background:#afc9ff;
+    }
+
+#page2 {
+    height:1000px;
+    width:100%;
+    background:#9b70c0;
+    }
+    
+#page3 {
+    height:1000px;
+    width:100%;
+    background:#777cdc;
+
+    }
+
+img {
+    width: 256px;
+}
+
+p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.inner-div
+{
+    width: 1000px;
+    height: 850px;
+    padding-top: 150px;
+    padding-left: 20px;
+    overflow: hidden; 
+}
+
+.firstdiv {
+    float: left;
+    height: 100%;
+    width: 50%;
+} 
+
+.seconddiv {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.heading {
+    font-size: 2.2em;
+    padding-bottom: 50px;
+}
+
+#social-links li {
+    padding-right: 20px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    background-color: red;
+    border-radius: 80%;
+    width: 50%; 
+}
+
+.page-padding {height:90px; width:100%;}
+
+a { color:white; text-decoration:none;}
+    
+a:hover { text-decoration:underline;}
+
+

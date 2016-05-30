@@ -1,38 +1,91 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Emily Claudet</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<meta charset="utf-8"/>
+<title>Emily Claudet</title>
+<meta name="viewport" content="width=device-width, minimumscale=
+1.0, maximum-scale=1.0" />
+<link href="main.css" type="text/css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+
 </head>
 
 <body>
-<div id="container">
-	<div id="topbar">
-	<div class="fixedwidth">
-		<div id="top-menu">
-		 <ul><li id="Home">
-		 		<a href="/">Emily Claudet</a>
-		 	</li>
-			 <li id="About Me">
-				 <a href="/about">About</a>
-			 </li>
-		</ul>
-		</div>
-	</div>
-	</div>
-	<div>
-		<div id="profile">
-			<img width="300px" src="images/emily.png" />
-		</div>
 
-		<div class="description">
-			American-British, London based, engineering enthusiast with a passion for empowering the new tech generation.
-		</div>
-	</div>
+<div id="nav">
+     <ul>
+        <li><a href="#home">Home</a></li>
+        <!--          <li><a href="#cv">CV</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+<!--         <li><a href="http://blog.emilyclaudet.com" target="_blank">Blog</a></li> -->
+     </ul>
 </div>
+
+<div id="page1">
+  <a id="home" class="smooth"></a>
+    <div class="inner-div">
+        <div class="heading">Emily Claudet</div>
+
+        <div class="firstdiv"><img src="images/emilyprofile.png"></div>
+        <div class="seconddiv">Hey! I'm Emily, a tech and games enthusiast. I live in East London.
+            <p>
+                I am currently working as a Product Manager at a tech startup called <a href="http://kano.me" target="_blank">Kano</a>.
+            </p>
+        </div>
+    
+    </div>
+</div>
+ 
+<!-- <div id="page2">
+  <a id="cv" class="smooth"></a>
+    <div class="inner-div">
+        <div class="heading">CV</div>
+        <div>I wonder...</div>
+    </div>
+</div>
+ --> 
+
+<div id="page3">
+  <a id="contact" class="smooth"></a>
+    <div class="inner-div">
+        <div class="heading">Get in touch</div>
+        <div id="social-links">
+             <ul>
+                 <li><a href="mailto:eaclaudet@gmail.com">Email</a></li>
+                 <li><a href="https://uk.linkedin.com/in/emily-claudet-9b3b7283" target="_blank">LinkedIn</a></li>
+                 <li><a href="http://www.twitter.com/eclaudet" target="_blank">Twitter</a></li>
+             </ul>
+
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')  
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 600);
+           return false;
+         });
+      }
+    }
+  });
+});</script>
 </body>
 </html>
